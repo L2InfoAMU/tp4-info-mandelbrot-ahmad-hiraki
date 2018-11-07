@@ -7,5 +7,5 @@ Le but du TP sera de corriger le code de la classe `Complex` en s'aidant de test
 
 ## Membres du projet
 
-- BARDAGHJI GEORGES
-- HIRAKI AHMAD
+- BARDAGHJI GEORGES     groupe 3
+- HIRAKI AHMAD          groupe 3
