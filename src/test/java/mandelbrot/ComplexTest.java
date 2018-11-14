@@ -174,5 +174,6 @@ public class ComplexTest {
         assertEquals(true, new Complex(0, 2).equals(twoI));
         assertEquals(false, new Complex(0, 1).equals(oneMinusI));
         assertEquals(false, two.equals(2));
+        assertEquals(true, oneMinusI.equals(oneMinusI));
     }
 }
