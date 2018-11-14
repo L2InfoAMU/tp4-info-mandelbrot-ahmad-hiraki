@@ -138,4 +138,27 @@ public class ComplexTest {
         assertEquals( minusOne, Complex.real(-1));
         assertEquals( two, Complex.real(2));
     }
+    @Test
+    void testAdd() {
+        assertEquals(new Complex(2, 2), two.add(twoI));
+        assertEquals(new Complex(3, -1), two.add(oneMinusI));
+    }
+    @Test
+    void testMultiply() {
+        assertEquals(new Complex(2, 2), onePlusI.multiply(two));
+        assertEquals(new Complex(-4, 4), new Complex (2,2).multiply(twoI));
+    }
+    @Test
+    void testSquareModuls() {
+        assertEquals(34, new Complex(3, -5).squaredModulus());
+        assertEquals(29, new Complex (2,-5).squaredModulus());
+    }
+    @Test
+    void testModuls() {
+        assertEquals(Math.sqrt(34), new Complex(3, -5).modulus());
+        assertEquals(Math.sqrt(29), new Complex (2,-5).modulus());
+    }
+
+
+
 }
