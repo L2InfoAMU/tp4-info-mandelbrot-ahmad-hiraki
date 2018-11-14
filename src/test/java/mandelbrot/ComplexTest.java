@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ComplexTest {
+    private final Complex ZERO = new Complex(0,0);
     private final Complex onePlusI = new Complex(1,1);
     private final Complex minusI = new Complex(0,-1);
     private final Complex minusOne = new Complex(-1,0);
@@ -157,6 +158,11 @@ public class ComplexTest {
     void testModuls() {
         assertEquals(Math.sqrt(34), new Complex(3, -5).modulus());
         assertEquals(Math.sqrt(29), new Complex (2,-5).modulus());
+    }
+    @Test
+    void testPow() {
+        assertEquals(ZERO , onePlusI.pow(0) );
+        assertEquals(new Complex(0, 2), onePlusI.pow(2));
     }
 
 
